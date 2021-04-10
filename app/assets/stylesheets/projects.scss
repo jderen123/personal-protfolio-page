@@ -1,0 +1,155 @@
+.whole-project-holder {
+  display: flex;
+}
+
+.content-holder-one {
+  margin-left: 17vw;
+  margin-top: 40px;
+  padding-left: 17px;
+  overflow: hidden;
+}
+
+.no-display {
+  display: none;
+}
+
+.profile-header {
+  margin-top: 68px;
+  display: flex;
+  margin-bottom: 50px;
+
+  h6 {
+      font-size: 1.15rem;
+  }
+
+}
+
+.side-line {
+  line-height: .5;
+}
+
+.blue-text {
+  color: #8BEAFC;
+  margin: 0;
+}
+
+.project-left {
+  transform: translateX(-200%);
+}
+
+.project-right {
+  transform: translateX(200%);
+  .profile-icon-holder {
+    margin-left: auto;
+
+  }
+
+}
+
+
+.project-left,
+.project-right {
+  display: flex;
+  margin-bottom: 80px;
+  transition: transform 1.1s ease;
+  .featured {
+      margin: 0px;
+      font-family: Georgia, Times, serif;
+  }
+
+ 
+ 
+}
+.show {
+  transform: translateX(0);
+}
+
+.description-box {
+  background-color: #444859;
+  width: 130%;
+  box-shadow: rgba(0, 0, 0, .4) 1px 3px 5px;
+  padding: 20px;
+  min-height: 24vh;
+  margin-bottom: 15px;
+  margin-right: -10vw;
+  z-index: 50;
+  border-radius: 5px;
+
+  p {
+      font-size: .89rem;
+  }
+}
+
+.skills-holder {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.skill-box {
+  padding: 4px;
+  border: 1px solid #8BEAFC;
+  border-radius: 3px;
+  margin-right: 11px;
+  margin-bottom: 11px;
+  transition: .3s;
+  font-size: .9rem;
+
+  &:hover {
+      transform: translateY(-5px);
+      transition: all 0.5s ease 0s;
+      box-shadow: rgb(139, 233, 253) 0px 0px 3px;
+  }
+}
+
+.profile-icon-holder {
+  display: flex;
+  width: 40%;
+  justify-content: space-between;
+}
+
+.prof-icon-heroku {
+  height: 40px;
+  width: 40px;
+  margin-top: 10px;
+}
+
+.body-light {
+  .blue-text {
+     color: #078786;
+  }
+
+  .skill-box {
+      border: 1px solid #078786;
+  }
+
+  .description-box {
+      background-color: #DCF9E4;
+  }
+}
+
+.project-image-holder {
+  z-index: -1;
+  margin-right: 2vw;
+   img {
+       height: 52vh;
+       width: 45vw;
+       opacity: .95;
+   }
+}
+.project-right {
+.project-content {
+  order: 2;
+  text-align: right;
+  .description-box {
+      margin-left: -10vw;
+  }
+
+}
+}
+.project-right {
+  padding-right: 17px;
+
+  .skills-holder {
+      flex-direction: row-reverse;
+  }
+}

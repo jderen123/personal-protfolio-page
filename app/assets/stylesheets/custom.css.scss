@@ -1,0 +1,101 @@
+@import 'bootstrap/dist/css/bootstrap';
+
+:root {
+    --dark-side-color: #15161B;
+    --green-code-text: #4FFA7A;
+    --inactive-tab-color: #1E2028;
+    --active-tab-color: #272B36;
+}
+
+// html {
+//     overflow: hidden;
+//     height: 100%;
+// }
+
+// body {
+//     height: 100%;
+//     overflow: auto;
+// }
+
+.body-dark {
+    background-color: #272B36 !important;
+    a {
+        color: #BD93F9 !important;
+        text-decoration: underline !important;
+    
+        &:hover {
+            color: gray !important;
+            transition: .3s ease-out;
+        }
+    }
+}
+
+.body-light {
+    background-color: white !important;
+
+    a {
+        color: #3801B3 !important;
+        text-decoration: underline !important;
+
+        &:hover {
+            color: rgba(0, 0, 0, .4) !important;
+            transition: .3s ease-out;
+
+        }
+    }
+}
+
+
+
+* {
+    font-family: "Droid Sans Mono", monospace, monospace, "Droid Sans Fallback";
+    font-size: 17px;
+
+
+}
+
+.img-icon {
+    width: 15px;
+    height: 15px;
+}
+
+
+
+
+// media querys 
+
+@media (max-width: 800px) {
+    .side-bar {
+        display: none !important;
+     
+    }
+
+    .content-holder {
+        margin-left: 0px !important;
+    }
+
+    .empty-holder {
+        display: none !important;
+    }
+    .project-image-holder {
+        transform: translateY(-15vw) !important;
+    }
+    .project-image-holder img {
+        height: auto !important;
+    }
+
+    .content-holder-one {
+        margin-left: 0 !important;
+    }
+   h6 {
+       margin-bottom: 14vw !important;
+   }
+
+   .profile-icon-holder  {
+    margin-bottom: 10vh !important;
+   }
+   .one-github-icon {
+       margin-bottom: 10vh !important;
+   }
+}
+

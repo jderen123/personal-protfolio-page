@@ -1,0 +1,35 @@
+.background-change-container {
+  height: 26px;
+  width: 50px;
+  cursor: pointer;
+  margin: auto 5px auto auto;
+  border-radius: 20px;
+}
+
+.back-dark {
+  background-color: #BEBEBE;
+}
+
+.background-change-circle {
+  margin: 3px;
+  height: 18px;
+  border-radius: 50%;
+  width: 18px;
+
+}
+
+.button-back-dark {
+  background-color: white;
+  box-shadow: rgb(80, 250, 123) 0px 0px 5px 5px;
+}
+
+.button-back-light {
+  box-shadow: rgba(0, 0, 0, .6) 1px 3px 3px 1px;
+  margin-left: auto;
+  background-color: white;
+}
+
+.back-light {
+  background-color: #4FFA7A;
+  
+}

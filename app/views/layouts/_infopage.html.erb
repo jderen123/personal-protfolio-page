@@ -1,0 +1,68 @@
+ <div class="left-header white-text">
+   <h1 class="mt-5 mb-0">Jordan Deren</h1>
+   <h4>Full Stack Web Developer</h4>
+   <div class="contact-list">
+     <div class="one-contact d-flex">
+       <img class="img-icon-contact" src="https://emoji.fileformat.info/png/260e.png">
+       <p> +1(407)-325-5080</p>
+     </div>
+     <div class="one-contact d-flex">
+       <img class="img-icon-contact"
+         src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/271/desktop-computer_1f5a5-fe0f.png">
+       <a class="white-text" href="mailto: jordanderen1@gmail.com">jordanderen1@gmail.com</a>
+     </div>
+     <div class="one-contact d-flex">
+       <img class="img-icon-contact" src="https://emojiguide.org/images/emoji/1/1h8dxjix3pf21.png">
+       <p> Orlando, Florida</p>
+     </div>
+   </div>
+ </div>
+ <div class="prof-link-info">
+   <div class="prof-link d-flex">
+     <%= image_tag ("github-logo.png"), class: "prof-icon-github" %>
+     <a class="github-a" href="https://github.com/jderen123">GitHub</a>
+   </div>
+   <div class="prof-link d-flex">
+     <%= image_tag ("linkedin-logo.png"), class: "prof-icon-linkedin" %>
+     <a class="linkedin-a" href="https://www.linkedin.com/in/jordan-deren-85595114b/">LinkedIn</a>
+   </div>
+ </div>
+ <p class="white-text middle-quote">"Any fool can write code that a computer can understand. Good programmers write code that humans can understand."</p>
+ <div class="projects-list white-text">
+   <h3 class="mb-3">Projects</h3>
+ </div>
+
+ <div class="projects-list white-text">
+   <% @projects.each do |project| %>
+   <a href="<%=project.github_link %>"> <%= project.name %></a>
+   <p><%= project.description %></p>
+   <% end %>
+
+<div class="technical-skills-list white-text">
+  <h4>Technical Skills</h4>
+  <div class="skill-subset">
+    <h5>Front End</h5>
+    <ul>
+      <li>HTML, (S)CSS and Javascript</li>
+      <li>React: Redux, Hooks, Router</li>
+      <li>Bootstrap, MaterailzeCSS, Semantic UI</li>
+      <li>Jquery</li>
+    </ul>
+  </div>
+  <div class="skill-subset">
+    <h5>Back End</h5>
+    <ul>
+      <li>RubyOnRails</li>
+      <li>API Integration: Google, Stripe, AWS, GeoCode</li>
+      <li>Ruby Gems: Device, Omniauth, Milia</li>
+      <li>ActionCable, Advanced Model Association</li>
+      <li>SQLite and PostgreSQL</li>
+    </ul>
+     <h5>Team Skills and Organization</h5>
+    <ul>
+      <li>Version Control with Github</li>
+      <li>Ruby Unit and Integration Testing</li>
+      <li>Production Deployemtn with Heroku</li>
+    </ul>
+  </div>
+</div>

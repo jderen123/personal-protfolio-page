@@ -1,0 +1,39 @@
+
+
+<div class="profile-header white-text">
+    <h6> Some Things I've Built</h6>
+    <h6 class="side-line ml-3">___________________________</h6>
+</div>
+
+
+<% @projects.each do |project| %>
+<div class="<%= project.id % 2 == 1 ? "project-left" : "project-right"%> white-text <%= project.id != 1 ? "projects" : "show" %> ">
+    <div class="project-content">
+        <p class="blue-text featured">Featured Project</p>
+        <h3><%= project.name %></h3>
+            <div class="description-box">
+                <p><%= project.description %></p>
+            </div>
+            <div class="skills-holder">
+                <% project.skills.each do |skill| %>
+                <p class="blue-text skill-box"><%= skill.name %></p>
+                <% end %>
+            </div>
+            <% if project.live_link != nil %>
+            <div class="profile-icon-holder">
+                <a class="github-a" href="<%=project.github_link %>"><%= image_tag ("github-logo.png"), class: "prof-icon-github" %></a>
+
+
+                <a class="linkedin-a" href="<%= project.live_link %>"> <img class="prof-icon-heroku"
+                        src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimg.icons8.com%2Fcolor%2F452%2Fheroku.png&f=1&nofb=1"></a>
+            </div>
+            <% else %>
+            <a class="github-a middle-icon" href="<%=project.github_link %>"><%= image_tag ("github-logo.png"), class: "prof-icon-github one-github-icon" %></a>
+            <% end %>
+
+    </div>
+    <div class="project-image-holder">
+    <img class="project-photo" src="<%= project.photo_key %>">
+    </div>
+</div>
+<% end %>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>PersonalProject</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
+
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  
+</head>
+
+
+<body class="body-dark">
+
+  <div class="whole-holder">
+
+    <div class="side-bar dark-side-bar text-left">
+      <div class="explorer-container">
+        <p class="white-text">Explorer</p>
+      </div>
+      <span class="src-holder d-flex white-text">
+      <p id="caret">╲╱</p>
+        <img class="src-icon open-folder" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn2.iconfinder.com%2Fdata%2Ficons%2Fflat-style-svg-icons-part-1%2F512%2Fopen_folder_blue-512.png&f=1&nofb=1">
+        <img class="closed-folder src-icon" src= "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn2.iconfinder.com%2Fdata%2Ficons%2Fflat-style-svg-icons-part-1%2F512%2Fclosed_folder-512.png&f=1&nofb=1" >
+        <p>src</p>
+     
+      </span>
+      <span class="side-text active-tab side-info-tab">
+        <img class="side-icon img-icon"
+          src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.iconscout.com%2Ficon%2Ffree%2Fpng-256%2Fruby-44-1175099.png&f=1&nofb=1">
+        <p class="green-code-text">info.html.erb</p>
+      </span>
+      <span class="side-text side-portfolio-tab">
+        <img class="side-icon img-icon"
+          src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fraw.githubusercontent.com%2Fvoodootikigod%2Flogo.js%2Fmaster%2Fjs.png&f=1&nofb=1">
+        <p class="green-code-text">portfolio.js</p>
+      </span>
+    </div>
+
+
+
+    <div class="top-bar dark-top-bar">
+      <div class="empty-holder"> K </div>
+      <span class="top-tab active-top-tab info-top-tab">
+        <img class="img-icon top-tab-icon"
+          src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.iconscout.com%2Ficon%2Ffree%2Fpng-256%2Fruby-44-1175099.png&f=1&nofb=1">
+        <p class="purple-code-text">info.html.erb</p>
+        <img class="img-icon info-exit-icon"
+          src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn3.iconfinder.com%2Fdata%2Ficons%2Fgame-3-fill%2F512%2Fclose-512.png&f=1&nofb=1">
+      </span>
+      <span class="top-tab portfolio-top-tab">
+        <img class="img-icon top-tab-icon"
+          src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fraw.githubusercontent.com%2Fvoodootikigod%2Flogo.js%2Fmaster%2Fjs.png&f=1&nofb=1">
+        <p class="purple-code-text">portfolio.js</p>
+        <img class="img-icon portfolio-exit-icon"
+          src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn3.iconfinder.com%2Fdata%2Ficons%2Fgame-3-fill%2F512%2Fclose-512.png&f=1&nofb=1">
+      </span>
+      <div class="background-change-container back-dark">
+        <div class="background-change-circle button-back-dark">
+
+        </div>
+      </div>
+    </div>
+
+    <div class="content-holder-one no-display">
+      <%= render 'layouts/profile' %>
+    </div>
+
+    <div class="content-holder">
+      <%= render 'layouts/infopage' %>
+    </div>
+
+
+
+  </div>
+  </div>
+  <%= yield %>
+</body>
+
+</html>

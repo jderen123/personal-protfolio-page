@@ -1,0 +1,86 @@
+.top-bar {
+  width: 100%;
+  background-color: var(--dark-side-color);
+  height: 40px;
+  z-index: 5;
+  display: flex;
+  border: 1px solid black;
+  position: fixed;
+  top: 0;
+}
+
+.empty-holder {
+  width: 17vw;
+}
+
+.top-tab {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px black solid;
+  border-left: none;
+  border-bottom: none;
+  cursor: pointer;
+  background-color: var(--inactive-tab-color);
+
+  &:hover {
+      background-color: var(--active-tab-color)
+  }
+}
+
+.dark-top-bar {
+  background-color: var(--dark-side-color);
+}
+
+.light-top-bar {
+  background-color: #BDBDBD;
+  border-bottom: 1px #86728A solid;
+  border-top: none;
+
+  .top-tab {
+      border: none;
+      background-color: #BDBDBD;
+
+      &:hover {
+          background-color: rgb(230, 230, 230);
+      }
+
+      .purple-code-text {
+          color: #3801B3;
+      }
+  }
+
+  .active-top-tab {
+      background-color: white;
+      border-left: none;
+      border-right: none;
+      border-top: 1px #3801B3 solid;
+
+  }
+
+
+
+}
+
+.top-tab-icon {
+  margin: 0 9px 0 5px;
+
+}
+
+.purple-code-text {
+  color: #6272A4;
+  margin-bottom: 0;
+  margin-right: 5px;
+
+}
+
+.active-top-tab {
+  border-top: 1px #BD93F9 solid;
+  background-color: var(--active-tab-color);
+  padding-top: 3px;
+}
+
+.info-exit-icon, .portfolio-exit-icon {
+  margin-bottom: 8px;
+  margin-right: 10px;
+}
