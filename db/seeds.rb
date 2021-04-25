@@ -10,7 +10,7 @@ bootstrap = Skill.create(name: "Bootstrap")
 milia = Skill.create(name: "Milia")
 ruby = Skill.create(name: "RubyonRails")
 
-nomadconnect = Project.create(name: "NomadConnect", description: "Web application that helps better connect digital nomads. Users can make posts and comments in their cities forum, see local events, and checkout local weather and news headlines. I was responsible for API, Omniauth and JS implementation.", github_link: "https://github.com/gforgione/nomad_connect", live_link: "nomadconnect.xyz", photo_key: "https://i.ibb.co/ZBdySxq/Screen-Shot-2021-04-07-at-4-38-34-PM.png" )
+nomadconnect = Project.create(name: "NomadConnect", description: "Web application that helps better connect digital nomads. Users can make posts and comments in their cities forum, see local events, and checkout local weather and news headlines. I was responsible for API, Omniauth and JS implementation.", github_link: "https://github.com/gforgione/nomad_connect", live_link: "https://nomadconnect.herokuapp.com/", photo_key: "https://i.ibb.co/ZBdySxq/Screen-Shot-2021-04-07-at-4-38-34-PM.png" )
 nomadconnect.skills << omniauth
 nomadconnect.skills << google_calander_api
 nomadconnect.skills << bootstrap
